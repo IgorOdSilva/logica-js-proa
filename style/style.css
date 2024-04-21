@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.containerExercice {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-column: 30px;
+    gap: 10px;
+}
+
+.containerExercice button {
+    margin: 1rem;
+    font-size: 11px;
+}
+
+.exercicio {
+    margin-right: 2rem;
+}
+
+button {
+    width: 90%;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+
+button:hover {
+    color: #e8e8e8;
+    background-color: #0f053b;
+}
+
+button:hover::before {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    .container {
+        height: auto; /* Altura automática para acomodar o conteúdo em dispositivos móveis */
+    }
+
+    .containerExercice {
+        margin: 10px; /* Margem reduzida para dispositivos móveis */
+    }
+
+    .backButton {
+        margin: 5px; /* Margem reduzida para dispositivos móveis */
+    }
+}
+
